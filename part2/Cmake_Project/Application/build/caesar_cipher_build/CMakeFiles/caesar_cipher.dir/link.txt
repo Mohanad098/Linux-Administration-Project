@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../out/libs/libcaesar_cipher.a CMakeFiles/caesar_cipher.dir/src/caesar_encrypt.c.o CMakeFiles/caesar_cipher.dir/src/caesar_decrypt.c.o
-/usr/bin/ranlib ../out/libs/libcaesar_cipher.a
