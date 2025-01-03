@@ -1,0 +1,21 @@
+# First we need to grant the user we created sudo access before switching users, this is done by:
+sudo usermod -aG sudo mostafa
+
+# Now we can switch to the newly created user by running:
+su - mostafa
+
+# Display all the files inside the extracted folder recursively and with long listing format
+ls -lR /home/mostafa/project_dir
+
+# Change to owner of this directory recursively to be the new user
+sudo chown -R mostafa:mostafa /home/mostafa/project_dir
+# You will be asked to write the password you entered while creating the user
+
+# Again, display all the files inside the extracted folder recursively and with long listing format
+ls -lR /home/mostafa/project_dir
+
+# Search for the word “file” in the extracted directory recursively
+grep -r "file" /home/mostafa/project_dir
+
+# Remove all the files ending with “.c”
+rm /home/mostafa/project_dir/*.c
